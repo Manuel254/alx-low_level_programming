@@ -14,7 +14,7 @@ int main(void)
 	{
 		num = i / 10;
 		den = i % 10;
-		
+
 		if (num < den)
 		{
 			putchar(num + '0');
@@ -24,8 +24,11 @@ int main(void)
 			{
 				putchar('\n');
 			}
-			putchar(',');
-			putchar(' ');
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 		i++;
 	}
