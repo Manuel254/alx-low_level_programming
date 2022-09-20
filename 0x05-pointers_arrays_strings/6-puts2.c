@@ -1,4 +1,5 @@
 #include "main.h"
+#include "string.h"
 
 /**
  * puts2 - prints character by skipping next
@@ -6,10 +7,13 @@
  */
 void puts2(char *str)
 {
-	while (*str != '\0')
+	int i = 0;
+	int n = strlen(str) - 1;
+
+	while (i < n)
 	{
-		_putchar(*str);
-		str += 2;
+		_putchar(str[i]);
+		i += 2;
 	}
 	_putchar('\n');
 }
