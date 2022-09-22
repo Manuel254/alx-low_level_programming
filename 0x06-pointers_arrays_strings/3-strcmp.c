@@ -28,6 +28,11 @@ int _strcmp(char *s1, char *s2)
 	for (i = 0; i < max; i++)
 	{
 		diff = (int) s1[i] - (int) s2[i];
+		if (diff != 0)
+		{
+			result += diff;
+			break;
+		}
 		result += diff;
 	}
 	return (result);
