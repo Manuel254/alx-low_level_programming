@@ -1,1 +1,1 @@
-This is a repository containing all low level programming projects
+This is a repository containing all of Alx low level programming projects
