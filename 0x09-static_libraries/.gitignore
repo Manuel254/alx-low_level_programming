@@ -1,4 +1,4 @@
 *.c
 *.o
 quote
-create_static_lib.sh
+liball.a
