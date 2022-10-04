@@ -9,11 +9,9 @@
  */
 char *_strdup(char *str)
 {
-	if (str == NULL)
-		return (NULL);
-	else
+	if (str != NULL)
 	{
-		char *ptr = (char*)malloc(sizeof(char) * (strlen(str) + 1));
+		char *ptr = malloc(sizeof(char) * (strlen(str) + 1));
 		unsigned long int i;
 
 		for (i = 0; i <= strlen(str); i++)
@@ -21,4 +19,6 @@ char *_strdup(char *str)
 
 		return (ptr);
 	}
+
+	return (NULL);
 }
