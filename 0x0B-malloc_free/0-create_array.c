@@ -8,12 +8,12 @@
  * Return: pointer to character or NULL
  */
 char *create_array(unsigned int size, char c)
-{	
+{
 	unsigned int i;
 	char *ptr = malloc(sizeof(*ptr) * size);
 
 	if ((ptr == NULL) || (size == 0))
-		return (NULL);	
+		return (NULL);
 
 	for (i = 0; i < size; i++)
 	{
