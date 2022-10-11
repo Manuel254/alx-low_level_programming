@@ -3,4 +3,4 @@
 
 #define SIZE 1024
 
-#endif // #ifndef OBJECT LIKE MACRO H
+#endif /* #ifndef OBJECT LIKE MACRO H */
