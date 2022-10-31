@@ -12,6 +12,9 @@ unsigned int valid_bin(const char *str)
 
 	len = strlen(str);
 
+	if (str == NULL)
+		return (0);
+
 	for (i = 0; i < len; i++)
 	{
 		if (str[i] == '0' || str[i] == '1')
