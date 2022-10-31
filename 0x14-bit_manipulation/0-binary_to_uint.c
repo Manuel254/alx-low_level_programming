@@ -12,12 +12,12 @@ unsigned int binary_to_uint(const char *b)
 
 	decimal = 0;
 	weight = 1;
-	
+
 	if (b == NULL)
 		return (0);
 
 	len = strlen(b);
-	while(len)
+	while (len)
 	{
 		if (b[len - 1] == '1')
 			decimal += weight;
