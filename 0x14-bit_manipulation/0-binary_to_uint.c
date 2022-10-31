@@ -12,9 +12,6 @@ unsigned int valid_bin(const char *str)
 
 	len = strlen(str);
 
-	if (str == NULL)
-		return (0);
-
 	for (i = 0; i < len; i++)
 	{
 		if (str[i] == '0' || str[i] == '1')
@@ -37,14 +34,20 @@ unsigned int binary_to_uint(const char *b)
 
 	decimal = 0;
 	weight = 1;
-	bin = valid_bin(b);
-
-	while (bin != 0)
+	
+	if (b == NULL)
+		return (0);
+	else
 	{
-		rem = bin % 10;
-		decimal += rem * weight;
-		bin = bin / 10;
-		weight *= 2;
+		bin = valid_bin(b);
+
+		while (bin != 0)
+		{
+			rem = bin % 10;
+			decimal += rem * weight;
+			bin = bin / 10;
+			weight *= 2;
+		}
 	}
 	return (decimal);
 }
