@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- * print_dlistint - prints all elements of a list
- * @h: pointer to the first node
+ * get_dnodeint_at_index - get nth node
+ * @head: pointer to the first node
  * @index: position of node
  *
- * Return: nth node
+ * Return: address of nth node else NULL
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
