@@ -3,7 +3,7 @@
 /**
  * insert_dnodeint_at_index - insert node at nth position
  * @h: pointer to the first node
- * @index: position of node
+ * @idx: position of node
  * @n: data to be inserted
  *
  * Return: address of new node else NULL
