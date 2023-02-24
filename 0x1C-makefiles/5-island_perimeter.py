@@ -4,6 +4,7 @@ and finds an island (1's) in the grid then calculates perimeter
 of the island
 """
 
+
 def island_perimeter(grid):
     """Perimeter of an island
     Args:
@@ -14,9 +15,9 @@ def island_perimeter(grid):
     visit = set()
 
     def dfs(i, j):
-        if i >= len(grid) or j >= len(grid[0]) or \
-            i < 0 or j < 0 or grid[i][j] == 0:
-                return 1
+        if i >= len(grid) or j >= len(grid[0]) or\
+                i < 0 or j < 0 or grid[i][j] == 0:
+            return 1
         if (i, j) in visit:
             return 0
 
