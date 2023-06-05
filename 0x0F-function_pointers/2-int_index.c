@@ -6,7 +6,8 @@
  * Return: index of first element which cmp does not return 0
  * else return -1
  */
-int int_index(int *array, int size, int (*cmp)(int)){
+int int_index(int *array, int size, int (*cmp)(int))
+{
 	int i;
 
 	if (size <= 0)
