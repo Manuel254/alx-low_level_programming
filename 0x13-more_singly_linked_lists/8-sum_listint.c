@@ -6,7 +6,7 @@
  *
  * Return: number of nodes
  */
-int listint_len(listint_t *head)
+int sum_listint(listint_t *head)
 {
 	listint_t *temp = head;
 	int sum = 0;
@@ -17,5 +17,5 @@ int listint_len(listint_t *head)
 		temp = temp->next;
 	}
 
-	return (count);
+	return (sum);
 }
